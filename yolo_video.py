@@ -1,4 +1,5 @@
 import sys
+sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
 import argparse
 from yolo import YOLO, detect_video
 from PIL import Image
