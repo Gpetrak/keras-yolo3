@@ -19,8 +19,12 @@ A Keras implementation of YOLOv3 (Tensorflow backend) inspired by [allanzelener/
 ```
 wget https://pjreddie.com/media/files/yolov3.weights
 python convert.py yolov3.cfg yolov3.weights model_data/yolo.h5
-python yolo_video.py [OPTIONS...] --image, for image detection mode, OR
-python yolo_video.py [video_path] [output_path (optional)]
+
+## For image detection mode:
+python yolo_video.py [OPTIONS...] --image 
+
+## For video detection mode
+python yolo_video.py [OPTIONS...] [video_path] [output_path (optional)]
 ```
 
 For Tiny YOLOv3, just do in a similar way, just specify model path and anchor path with `--model model_file` and `--anchors anchor_file`.
@@ -28,8 +32,8 @@ For Tiny YOLOv3, just do in a similar way, just specify model path and anchor pa
 ### Usage
 Use --help to see usage of yolo_video.py:
 ```
-usage: yolo_video.py [-h] [--model MODEL] [--anchors ANCHORS]
-                     [--classes CLASSES] [--gpu_num GPU_NUM] [--image]
+usage: yolo_video.py [-h] [--model_model MODEL] [--anchors_model ANCHORS]
+                     [--classes_model CLASSES] [--gpu_num GPU_NUM] [--image]
                      [--input] [--output]
 
 positional arguments:
